@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghalia Haji Taher | Portfolio</title>
+
+<style>
+/* General Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ff69b4;
+  color: white;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
+/* Header with Text Overlay */
+.header-image {
+  background: url('https://cdn.pixabay.com/photo/2022/01/26/03/45/flowers-6967755_1280.jpg') center/cover no-repeat;
+  height: 400px;
+  position: relative;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  font-size: 2rem;
+}
+
+/* Image Styles */
+.image-section {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.styled-image {
+  filter: grayscale(50%);
+  border-radius: 20px;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Two Column Layout */
+.columns {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.column {
+  width: 45%;
+  background: #ffe4e1;
+  padding: 20px;
+  color: #444;
+  height: 200px;
+}
+
+/* Table Styles */
+.table-section {
+  padding: 20px;
+  text-align: center;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+th, td {
+  border: 1px solid #555;
+  padding: 10px;
+}
+
+th {
+  background-color: #ffb6c1;
+}
+
+/* Paragraph Hover */
+.hover-text {
+  text-align: center;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.hover-text:hover {
+  color: #ff1493;
+}
+
+/* Image Fade Overlay */
+.fade-container {
+  position: relative;
+  width: 60%;
+  margin: 20px auto;
+}
+
+.fade-image {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.fade-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.fade-container:hover .fade-overlay {
+  opacity: 1;
+}
+
+/* Video Background Section */
+.video-container {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.video-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+}
+
+/* Footer */
+footer {
+  background-color: #ff69b4;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 15px 0;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+  </ul>
+</nav>
+
+<!-- Header with Text Over Image -->
+<header id="home" class="header-image">
+  <h1 class="overlay-text">Welcome to Ghalia Haji Taher's Portfolio</h1>
+</header>
+
+<!-- Centered Image with Rounded Edges and Filter -->
+<section class="image-section">
+  <h2>Profile</h2>
+  <img src="https://cdn.pixabay.com/photo/2015/01/28/20/15/roses-615281_1280.jpg" alt="Ghalia Haji Taher" class="styled-image">
+</section>
+
+<!-- Two Column Layout -->
+<section class="columns">
+  <div class="column">I am passionate about computer science, design, and creative coding.</div>
+  <div class="column">I started learning how to make unique websites and digital experiences.</div>
+</section>
+
+<!-- Table -->
+<section class="table-section">
+  <h2>Subjects</h2>
+  <table>
+    <tr>
+      <th>Course</th>
+      <th>Grade</th>
+    </tr>
+    <tr>
+      <td>HTML</td>
+      <td>Very good</td>
+    </tr>
+    <tr>
+      <td>CSS</td>
+      <td>Not Yet</td>
+    </tr>
+  </table>
+</section>
+
+<!-- Paragraph with Hover -->
+<section>
+  <p class="hover-text">Hover over this paragrapth element to see something cool!</p>
+</section>
+
+<!-- Image Overlay Fade -->
+<section class="fade-container">
+  <img src="https://cdn.pixabay.com/photo/2023/02/01/17/58/cactus-7760970_1280.jpg" alt="Overlay Image" class="fade-image">
+  <div class="fade-overlay">Hello, I'm Ghalia!</div>
+</section>
+
+<!-- Video Background -->
+<section class="video-container">
+  <video autoplay muted loop class="video-bg">
+    <source src="https://cdn.pixabay.com/video/2022/03/15/110790-688648716_tiny.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <div class="video-text">Future Creative Coder | Designer | Dreamer</div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 Ghalia Haji Taher. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
